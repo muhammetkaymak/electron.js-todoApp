@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List | Electron.js</title>
+  <link rel="stylesheet" href="../assets/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/style.css" />
+
+  <style>
+    body{
+      overflow-x: hidden;
+    }
+    #todoValue {
+      margin-right: 6px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark p-3">
+    <a class="navbar-brand text-white">TODO List</a>
+    <div class="col-md-6 d-flex">
+      <input type="text" class="form-control mr-2" id="todoValue" />
+      <button class="btn btn-success" id="addBtn">Ekle</button>
+    </div>
+  </nav>
+
+  <div class="container main-container pt-5">
+
+    <div class="todo-container container">
+    </div>
+
+  </div>
+
+  <div class="alert-container row">
+    <div class="alert alert-warning col-md-8 offset-2">
+      <b>Herhangi bir todo bulunmamaktadır.</b>
+    </div>
+  </div>
+
+  <nav class="fixed-bottom navbar-light bg-light">
+    <span>Toplam Kayıt Sayısı : <b class="total-count-container"></b></span>
+  </nav>
+
+  <script src="../assets/mainWİndow.js"></script>
+</body>
+
+</html>
